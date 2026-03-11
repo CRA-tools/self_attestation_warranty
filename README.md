@@ -36,14 +36,14 @@
   <p align="center">
     A questionnaire for self-assessing CRA compliance.
     <br />
-    <a href="https://github.com/CRACY-project/self_attestation_warranty"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/CRA-tools/self_attestation_warranty"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://CRACY-project.github.io/self_attestation_warranty">View Demo</a>
+    <a href="https://CRA-tools.github.io/self_attestation_warranty">View Demo</a>
     &middot;
-    <a href="https://github.com/CRACY-project/self_attestation_warranty/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/CRA-tools/self_attestation_warranty/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
-    <a href="https://github.com/CRACY-project/self_attestation_warranty/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/CRA-tools/self_attestation_warranty/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -69,7 +69,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project implements a web-based questionnaire that allows you to assess your CRA compliance. All questions must be responded. You can view the questionnaire [online](https://CRACY-project.github.io/self_attestation_warranty) or clone the repository. Questions are retrieved from the `db/questions.json` file.
+This project implements a web-based questionnaire that allows you to assess your CRA compliance. All questions must be responded. You can view the questionnaire [online](https://CRA-tools.github.io/self_attestation_warranty) or clone the repository. Questions are retrieved from the `db/questions.json` file.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -78,7 +78,7 @@ This project implements a web-based questionnaire that allows you to assess your
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/CRACY-project/self_attestation_warranty/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/CRA-tools/self_attestation_warranty/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +115,7 @@ Distributed under the MIT License project_license. See `LICENSE.txt` for more in
 
 The CRACY project info@cra-cy.eu
 
-Project Link: [https://github.com/CRACY-project/self_attestation_warranty](https://github.com/CRACY-project/self_attestation_warranty)
+Project Link: [https://github.com/CRA-tools/self_attestation_warranty](https://github.com/CRA-tools/self_attestation_warranty)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,16 +132,16 @@ Project Link: [https://github.com/CRACY-project/self_attestation_warranty](https
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/CRACY-project/self_attestation_warranty.svg?style=for-the-badge
-[contributors-url]: https://github.com/CRACY-project/self_attestation_warranty/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/CRACY-project/self_attestation_warranty.svg?style=for-the-badge
-[forks-url]: https://github.com/CRACY-project/self_attestation_warranty/network/members
-[stars-shield]: https://img.shields.io/github/stars/CRACY-project/self_attestation_warranty.svg?style=for-the-badge
-[stars-url]: https://github.com/CRACY-project/self_attestation_warranty/stargazers
-[issues-shield]: https://img.shields.io/github/issues/CRACY-project/self_attestation_warranty.svg?style=for-the-badge
-[issues-url]: https://github.com/CRACY-project/self_attestation_warranty/issues
-[license-shield]: https://img.shields.io/github/license/CRACY-project/self_attestation_warranty.svg?style=for-the-badge
-[license-url]: https://github.com/CRACY-project/self_attestation_warranty/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/CRA-tools/self_attestation_warranty.svg?style=for-the-badge
+[contributors-url]: https://github.com/CRA-tools/self_attestation_warranty/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/CRA-tools/self_attestation_warranty.svg?style=for-the-badge
+[forks-url]: https://github.com/CRA-tools/self_attestation_warranty/network/members
+[stars-shield]: https://img.shields.io/github/stars/CRA-tools/self_attestation_warranty.svg?style=for-the-badge
+[stars-url]: https://github.com/CRA-tools/self_attestation_warranty/stargazers
+[issues-shield]: https://img.shields.io/github/issues/CRA-tools/self_attestation_warranty.svg?style=for-the-badge
+[issues-url]: https://github.com/CRA-tools/self_attestation_warranty/issues
+[license-shield]: https://img.shields.io/github/license/CRA-tools/self_attestation_warranty.svg?style=for-the-badge
+[license-url]: https://github.com/CRA-tools/self_attestation_warranty/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/cracy/
 [product-screenshot]: images/screenshot.png
