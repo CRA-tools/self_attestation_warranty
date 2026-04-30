@@ -531,12 +531,12 @@
           ]
         },
         {
-          "title": "Technical documentation, support period",
-          "description": "The technical documentation shall include the information that the manufacturer used to determine the support period for the product with digital elements. This information must reflect how long the product is expected to be in use and the factors the manufacturer considered when deciding an appropriate support period. This section should describe:<ul><li>the expected time the product will remain in normal use;</li><li>the intended purpose and reasonably foreseeable use of the product</li></ul>",
+          "title": "Additional documentation",
+          "description": "",
           "questions": [
             {
-              "title": "Support Period Determination",
-              "content": "Does the “information for the support period” contain how the product’s support period was determined?",
+              "title": "Support Period",
+              "content": "Have you determined an appropriate support period for the PDE?",
               "type": "mchoices",
               "responses": [
                 {
@@ -552,10 +552,10 @@
                   "type": "choice"
                 }
               ],
-              "info": "Example: Based on OS vendor support roadmap and internal policy.Reference: Annex VII (4)"
+              "info": "Manufacturers shall ensure, when placing a PDE on the market, and for the support period that vulnerabilities of that product, including its components, are handled effectively and in accordance with the essential cybersecurity requirements set out in Part II of Annex I of the regulation. <br/> Manufacturers shall determine the support period so that it reflects the length of time during which the product is expected to be in use, taking into account, in particular, reasonable user expectations, the nature of the product, including its intended purpose, as well as relevant Union law determining the lifetime of PDEs. When determining the support period, manufacturers may also take into account the support periods of products with digital elements offering a similar functionality placed on the market by other manufacturers, the availability of the operating environment, the support periods of integrated components that provide core functions and are sourced from third parties as well as relevant guidance provided by the dedicated administrative cooperation group (ADCO) and the Commission. The matters to be taken into account in order to determine the support period shall be considered in a manner that ensures proportionality.The support period shall be at least five years. Where the product with digital elements is expected to be in use for less than five years, the support period shall correspond to the expected use time."
             },
             {
-              "title": "Declared Support Period",
+              "title": "Ηarmonised standards and technical specifications",
               "content": "Does the “information for the support period” contain the declared support period (dates or duration)?",
               "type": "mchoices",
               "responses": [
@@ -575,7 +575,7 @@
               "info": "Example: Security updates provided until 31 December 2030.Reference: Annex VII (4)"
             },
             {
-              "title": "Support Period Communication",
+              "title": "Test reports",
               "content": "Does the “information for the support period” contain where the support period is communicated to users??",
               "type": "mchoices",
               "responses": [
@@ -595,7 +595,7 @@
               "info": "Example: On website, packaging, or in product interface.Reference: Annex VII (4)"
             },
             {
-              "title": "Support Period ↔ Risk Assessment Link",
+              "title": "EU declaration of conformity",
               "content": "Does the “information for the support period” contain how the support period links to the risk assessment and update plan??",
               "type": "mchoices",
               "responses": [
@@ -613,36 +613,10 @@
                 }
               ],
               "info": "Example: Risk analysis shows update relevance through lifecycle.Reference: Annex VII (4)"
-            }
-          ]
-        },
-        {
-          "title": "Technical documentation, harmonised standards",
-          "description": "The technical documentation shall include a list of the harmonised standards, common specifications, or European cybersecurity certification schemes that you applied to meet the essential cybersecurity requirements. This section should describe:<ul><li>which harmonised standards were used (full or partial application);</li><li>which parts of a standard or specification were applied, if only certain sections were used;</li><li>which common specifications or European cybersecurity certification schemes were followed;</li><li>how these standards or solutions support compliance with Parts I and II of Annex I.</li></ul>If any standard or specification was only applied partially, the documentation must clearly identify which parts were used and how they contribute to meeting the essential cybersecurity requirements.",
-          "questions": [
-            {
-              "title": "Standards or Specifications Demonstrating Conformity",
-              "content": "Does the “list of applied standards and specifications” contain which standards or specifications demonstrate conformity?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: ISO/IEC 27001.Reference: Annex VII (5)"
             },
-            {
-              "title": "Version Numbers & Publication Dates of Standards",
-              "content": "Does the “list of applied standards and specifications” contain the version numbers and publication dates of those standards?",
+             {
+              "title": "Software bill of material",
+              "content": "Does the “information for the support period” contain how the support period links to the risk assessment and update plan??",
               "type": "mchoices",
               "responses": [
                 {
@@ -658,179 +632,7 @@
                   "type": "choice"
                 }
               ],
-              "info": "Example: ISO/IEC 27001:2022.Reference: Annex VII (5)"
-            },
-            {
-              "title": "Certificates or Attestations Supporting Conformity",
-              "content": "Does the “list of applied standards and specifications” contain which certificates or attestations support conformity?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: CE certificate, cybersecurity scheme statement.Reference: Annex VII (5)"
-            },
-            {
-              "title": "Standards & Controls Cross-Reference",
-              "content": "Does the “list of applied standards and specifications” contain how the listed standards and controls link to Annex I requirements?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Cross-reference table between requirements and controls.Reference: Annex VII (5)"
-            }
-          ]
-        },
-        {
-          "title": "Technical documentation, reports of the tests",
-          "description": "The technical documentation shall include the reports of the tests carried out to verify the conformity of the product with digital elements and the vulnerability handling processes with the essential cybersecurity requirements. These reports must show that the product and its associated processes meet the requirements set out in Parts I and II of Annex I. This section should describe:<ul><li>the tests performed on the product along with the methods, tools, and procedures used to verify conformity;</li><li>the tests performed on the vulnerability handling processes;</li><li>the evidence above should demonstrate that the essential cybersecurity requirements have been met from Annex I Parts I and II;</li></ul>",
-          "questions": [
-            {
-              "title": "Tests Performed for Conformity",
-              "content": "Does the “test reports for conformity” contain what tests were performed to verify compliance with Annex I?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: penetration testing, code review, vulnerability scan.Annex VII(6)"
-            },
-            {
-              "title": "Test Execution Details",
-              "content": "Does the “test reports for conformity” contain who performed the tests, when they were performed, and on which version?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: CyberLab EU, March 2025, firmware v2.1.Annex VII(6)"
-            },
-            {
-              "title": "Test Configurations, Results & Outcomes",
-              "content": "Does the “test reports for conformity” contain the test configurations, results, and outcomes?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: pass/fail summary, test case references, reproducibility details.Annex VII(6)"
-            },
-            {
-              "title": "Remediation Actions & Residual Risks",
-              "content": "Does the “test reports for conformity” contain what remediation actions were taken and what residual risks remain?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: patch v2.1.1 mitigated buffer overflow issue.Annex VII(6)"
-            },
-            {
-              "title": "Version Control & Traceability of Test Reports",
-              "content": "Does the “test reports for conformity” contain how the test reports are version-controlled and linked to product builds?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: report versioned per release; signed approval by Quality Assurance lead.Annex VII(6)"
-            }
-          ]
-        },
-        {
-          "title": "Technical documentation, EU Declaration of Conformity",
-          "description": "The technical documentation shall include a copy of the EU Declaration of Conformity for the product with digital elements. This document confirms that the product complies with the relevant provisions of the regulation and any other applicable Union legislation. This section should include:<ul><li>the complete and signed EU Declaration of Conformity;</li></ul>The declaration must be the final version provided to users or authorities and must match the product and version documented elsewhere in the technical file.",
-          "questions": [
-            {
-              "title": "Completed & Signed EU Declaration of Conformity",
-              "content": "Does the “EU declaration of conformity” contain a completed and signed EU Declaration of Conformity?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Point to the question set about the EU Declaration.Annex VII(7)"
+              "info": "Example: Risk analysis shows update relevance through lifecycle.Reference: Annex VII (4)"
             }
           ]
         }
