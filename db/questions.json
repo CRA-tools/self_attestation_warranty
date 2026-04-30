@@ -1,12 +1,12 @@
 {
       "sections": [
         {
-          "title": "Technical documentation, general Description",
-          "description": "The Technical documentation of a product with digital elements shall contain a general description of the product with digital elements, including:<ul><li>its intended purpose;</li><li>versions of software affecting compliance with essential cybersecurity requirements;</li><li>where the product with digital elements is a hardware product, photographs or illustrations showing external features, marking and internal layout;</li><li>user information and instructions</li></ul>",
+          "title": "PDE general description",
+          "description": "A manufacturer shall identify:<ul><li>PDE's intended purpose;</li><li>Versions of software affecting compliance with essential cybersecurity requirements;</li><li>Where the PDE is a hardware product, photographs or illustrations showing external features, marking and internal layout;</li><li>User information and instructions</li></ul>",
           "questions": [
             {
-              "title": "Intended Purpose & Intended Users",
-              "content": "Does the “general description” of the technical documentation contain the product’s intended purpose and who are its intended users?.",
+              "title": "Intended purpose and reasonably foreseeable use",
+              "content": "Have you documented PDE's intended purpose and reasonably foreseeable use",
               "type": "mchoices",
               "responses": [
                 {
@@ -22,11 +22,30 @@
                   "type": "choice"
                 }
               ],
-              "info": "‘intended purpose’ means the use for which a product with digital elements is intended by the manufacturer, including the specific context and conditions of use, as specified in the information supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation;Example: Smart sensor for home use; connects via Wi-Fi; typical user: consumer.Reference: Annex VII (1)(a)"
+              "info": " <b>Intended purpose</b> means the use for which a PDE is intended by the manufacturer, including the specific context and conditions of use, as specified in the information supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation;Example: Smart sensor for home use; connects via Wi-Fi; typical user: consumer. <b>Reasonably foreseeable use</b> means use that is not necessarily the intended purpose supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation, but which is likely to result from reasonably foreseeable human behaviour or technical operations or interactions"
             },
             {
-              "title": "Visual & Images for Product",
-              "content": "Does the “general description” of the technical documentation contain visuals or images to show the product and markings?",
+              "title": "Versions of software",
+              "content": "Have you documented PDE's versions of software affecting compliance with essential cybersecurity requirements",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ]
+            },
+            {
+              "title": "Visual and Images of PDE",
+              "content": "Is your PDE a hardware product? If yes, can you provide photographs or illustrations showing external features, marking and internal layout?",
               "type": "mchoices",
               "responses": [
                 {
@@ -46,12 +65,17 @@
                   "type": "choice"
                 }
               ],
-              "info": "Example: Photo showing general hardware, CE mark, serial number, and model label.Reference: Annex VII (1)(c)",
-              "allow_na": true
-            },
+              "info": "Example: Photo showing general hardware, CE mark, serial number, and model label."
+            }
+          ]
+        },
+        {
+          "title": "Information and instructions to the user",
+          "description": "Manufacturers shall ensure that PDEs are accompanied by information and instructions to the user in paper or electronic form. Such information and instructions shall be provided in a language which can be easily understood by users and market surveillance authorities. They shall be clear, understandable, intelligible and legible. They shall allow for the secure installation, operation and use of products with digital elements. Manufacturers shall keep the information and instructions to the user at the disposal of users and market surveillance authorities for at least 10 years after the product with digital elements has been placed on the market or for the support period, whichever is longer. Where such information and instructions are provided online, manufacturers shall ensure that they are accessible, user-friendly and available online for at least 10 years after the product with digital elements has been placed on the market or for the support period, whichever is longer.",
+          "questions": [
             {
-              "title": "Key Conditions & Limitations",
-              "content": "Does the “general description” of the technical documentation contain key conditions or limitations of use?",
+              "title": "Information and instructions to the user availability",
+              "content": "Are you prepared to keep the information and instructions to the user at the disposal of users and market surveillance authorities for at least 10 years after the PDE has been placed on the market or for the support period, whichever is longer?",
               "type": "mchoices",
               "responses": [
                 {
@@ -66,32 +90,11 @@
                   "title": "In Progress",
                   "type": "choice"
                 }
-              ],
-              "info": "Example: Indoor use only; operating temperature 0–40 °C.Reference: Annex VII (1)"
+              ]
             },
             {
-              "title": "Software & Firmware Versions Used",
-              "content": "Does the “general description” of the technical documentation contain information about the software or firmware versions are used in the product?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Firmware v2.1.0; App v3.0.2.Reference: Annex VII (1)(b)"
-            },
-            {
-              "title": "Previous Software & Firmware Versions",
-              "content": "Does the “general description” of the technical documentation contain information about previous software or firmware versions that have been placed on the market and are still available to users?",
+              "title": "Information and instructions to the user, online access",
+              "content": "Are information and instructions to the user provide online? If yes, have you ensured that they are accessible, user-friendly and available online for at least 10 years after the product with digital elements has been placed on the market or for the support period, whichever is longer.",
               "type": "mchoices",
               "responses": [
                 {
@@ -110,13 +113,107 @@
                   "title": "Not Applicable",
                   "type": "choice"
                 }
-              ],
-              "info": "Example: Firmware v1.1, sold until July 2027.Reference: Annex VII (1)(b)",
-              "allow_na": true
+              ]
             },
             {
-              "title": "Version Identification in the Field",
-              "content": "Does the “general description” of the technical documentation contain information about how can each version of the product be identified in the field?",
+              "title": "Manufacturer identification and contact information",
+              "content": "Do information and instructions to the user include information related to the manufacturer name, registered trade name or registered trademark, and contact information?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ],
+              "info":"A PDE shall be accompanied with the name, registered trade name or registered trademark of the manufacturer, and the postal address, the email address or other digital contact as well as, where available, the website at which the manufacturer can be contacted"
+            },
+            {
+              "title": "Contact point responsible for vulnerabilities handling",
+              "content": "Do information and instructions to the user include a single point of contact where information about vulnerabilities of the PDE can be reported and received, and where the manufacturer's policy on coordinated vulnerability disclosure can be found?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ]
+            },
+            {
+              "title": "PDE identification",
+              "content": "Do information and instructions to the user include name and type and any additional information enabling the unique identification of the PDE",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ]
+            },
+            {
+              "title": "PDE intended purpose",
+              "content": "Do information and instructions to the user include information related to the intended purpose of the PDE, as well the security environment provided by the manufacturer, the product's essential functionalities and information about the security properties?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ]
+            },
+            {
+              "title": "Circumstances which may lead to cybersecurity risks",
+              "content": "Do information and instructions to the user include any known or foreseeable circumstance, related to the use of the product with digital elements in accordance with its intended purpose or under conditions of reasonably foreseeable misuse, which may lead to significant cybersecurity risks?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ]
+            },
+            {
+              "title": "EU declaration of conformity",
+              "content": "Have you produce an EU declaration of conformity? If yes, do information and instructions to the user include the internet address at which the EU declaration of conformity can be accessed",
               "type": "mchoices",
               "responses": [
                 {
@@ -135,13 +232,30 @@
                   "title": "Not Applicable",
                   "type": "choice"
                 }
-              ],
-              "info": "Example: Version shown in device interface; model number on label.Reference: Annex VII (1)(b)",
-              "allow_na": true
+              ]
             },
             {
-              "title": "User Information & Instructions",
-              "content": "Does the “general description” of the technical documentation contain user information and instructions?",
+              "title": "Technical security support",
+              "content": "Do information and instructions to the user include information related to the type of technical security support offered by the manufacturer and the end-date of the support period during which users can expect vulnerabilities to be handled and to receive security updates?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ]
+            },
+            {
+              "title": "Instructions",
+              "content": "Do information and instructions to the user include the necessary detailed instructions or an internet address referring to such detailed instructions and information?",
               "type": "mchoices",
               "responses": [
                 {
@@ -157,7 +271,30 @@
                   "type": "choice"
                 }
               ],
-              "info": "Example: User manual.Reference: Annex VII (1)(d)"
+              "info":"Instructions about the following shall be provided:<ul><li>the necessary measures during initial commissioning and throughout the lifetime of the product with digital elements to ensure its secure use</li><li>how changes to the product with digital elements can affect the security of data</li><li>how security-relevant updates can be installed</li><li>the secure decommissioning of the product with digital elements, including information on how user data can be securely removed</li><li>how the default setting enabling the automatic installation of security updates, as required by Part I, point (2)(c), of Annex I, can be turned off</li><li>where the product with digital elements is intended for integration into other products with digital elements, the information necessary for the integrator to comply with the essential cybersecurity requirements set out in Annex I and the documentation requirements set out in Annex VII of the regulation</li></ul>"
+            },
+            {
+              "title": "Software bill of materials ",
+              "content": "Will the software bill of materials be available to the user? If yes, do information and instructions to the user include information on where the software bill of materials can be accessed?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                },
+                {
+                  "title": "Not Applicable",
+                  "type": "choice"
+                }
+              ]
             }
           ]
         },
