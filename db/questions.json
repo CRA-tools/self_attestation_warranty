@@ -1,6 +1,285 @@
 {
       "sections": [
         {
+          "title": "Cybersecurity risks assessment, general requirements",
+          "description": " When placing a product with digital elements on the market, manufacturers shall ensure that it has been designed, developed and produced in accordance with the essential cybersecurity requirements set out in Part I of Annex I of the regulation. For this purpose,  manufacturers shall undertake an assessment of the cybersecurity risks associated with a product with digital elements and take the outcome of that assessment into account during the planning, design, development, production, delivery and maintenance phases of the product with digital elements with a view to minimising cybersecurity risks, preventing incidents and minimising their impact, including in relation to the health and safety of users",
+          "questions":[
+            {
+              "title": "Documented and Maintained Cybersecurity Risk Assessment",
+              "content":"Have you documented a cybersecurity risks assessment and have you defined an update process for the duration of the lifetime of the product?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ]
+            },
+            {
+              "title": "Intended purpose and reasonably foreseeable use",
+              "content":"Does the cybersecurity risk assessment include the intended purpose and reasonably foreseeable use of PDE?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ]
+            },
+            {
+              "title": "PDE operational environment",
+              "content":"Does the cybersecurity risk assessment include information about PDE's operational environment?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ],
+              "info": "This refers to the external conditions under which the PDE is used within it intended purpose and reasonably foreseeable use"
+            },
+            {
+              "title": "Protected assets",
+              "content":"Does the cybersecurity risk assessment include information about PDE's protected assets?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ]
+            }
+          ]
+        },
+         {
+          "title": "Cybersecurity risks assessment, essential cybersecurity requirements, Part I",
+          "description": "These questions concern Annex I, Part I of the regulation",
+          "questions":[
+            {
+              "title": "Security by design",
+              "content":"Does the cybersecurity risk assessment include information how an appropriate level of cybersecurity based on the risks is ensured throughout the the product lifecycle?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ],
+              "info": "Products with digital elements shall be designed, developed and produced in such a way that they ensure an appropriate level of cybersecurity based on the risks"
+            },
+            {
+              "title": "No known vulnerabilities",
+              "content":"Does the cybersecurity risk assessment describe how the \"no known exploitable vulnerabilities\" requirement is implemented, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ],
+              "info": "Products with digital elements, if applicable,  shall be made available on the market without known exploitable vulnerabilities"
+            },
+            {
+              "title": "Secure by default configuration",
+              "content": "Does the cybersecurity risk assessment describe how the product is provided with a secure-by-default configuration, including the ability to reset the product to its original secure state, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ],
+              "info": "Products with digital elements shall be made available on the market with a secure-by-default configuration, including the possibility to reset the product to its original state, unless otherwise agreed between the manufacturer and the business user for a tailor-made product with digital elements."
+            },
+            {
+              "title": "Security updates and vulnerability remediation",
+              "content": "Does the cybersecurity risk assessment describe how vulnerabilities are addressed through security updates and the corresponding user notification mechanism, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {
+                  "title": "Yes",
+                  "type": "choice"
+                },
+                {
+                  "title": "No",
+                  "type": "choice"
+                },
+                {
+                  "title": "In Progress",
+                  "type": "choice"
+                }
+              ],
+              "info": "Products with digital elements shall ensure that vulnerabilities can be addressed through security updates, including, where applicable, automatic security updates enabled by default, clear opt-out mechanisms, user notifications for available updates, and the option to temporarily postpone updates."
+            },
+            {
+              "title": "Protection from unauthorised access",
+              "content": "Does the cybersecurity risk assessment describe how the product is protected against unauthorised and reports possible unauthorised access, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                { "title": "Yes", "type": "choice" },
+                { "title": "No", "type": "choice" },
+                { "title": "In Progress", "type": "choice" }
+              ],
+              "info": "Products with digital elements shall ensure protection from unauthorised access by appropriate control mechanisms, including but not limited to authentication, identity or access management systems, and report on possible unauthorised access."
+            },
+            {
+              "title": "Confidentiality protection",
+              "content": "Does the cybersecurity risk assessment describe how the confidentiality of stored, transmitted, or processed data is protected, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                { "title": "Yes", "type": "choice" },
+                { "title": "No", "type": "choice" },
+                { "title": "In Progress", "type": "choice" }
+              ],
+              "info": "Products with digital elements shall pprotect the confidentiality of stored, transmitted or otherwise processed data, personal or other, such as by encrypting relevant data at rest or in transit by state of the art mechanisms, and by using other technical means."
+            },
+            {
+              "title": "Integrity protection",
+              "content": "Does the cybersecurity risk assessment describe how the integrity of data, commands, programs, and configurations is protected against unauthorised modification, and how corruptions are reported, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                { "title": "Yes", "type": "choice" },
+                { "title": "No", "type": "choice" },
+                { "title": "In Progress", "type": "choice" }
+              ],
+              "info": "Products with digital elements shall protect the integrity of stored, transmitted or otherwise processed data, personal or other, commands, programs and configuration against any manipulation or modification not authorised by the user, and report on corruptions."
+            },
+            {
+              "title": "Data minimisation",
+              "content": "Does the cybersecurity risk assessment describe how the product limits the processing of data to what is necessary for its intended purpose, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                { "title": "Yes", "type": "choice" },
+                { "title": "No", "type": "choice" },
+                { "title": "In Progress", "type": "choice" }
+              ],
+              "info": "Products with digital elements shall process only data, personal or other, that are adequate, relevant and limited to what is necessary in relation to the intended purpose of the product with digital elements (data minimisation)."
+            },
+            {
+              "title": "Availability and resilience",
+              "content": "Does the cybersecurity risk assessment describe how the product protects the availability of essential functions, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                { "title": "Yes", "type": "choice" },
+                { "title": "No", "type": "choice" },
+                { "title": "In Progress", "type": "choice" }
+              ],
+              "info": "Products with digital elements shall protect the availability of essential and basic functions, also after an incident, including through resilience and mitigation measures against denial-of-service attacks."
+            },
+            {
+              "title": "Impact on connected services",
+              "content": "Does the cybersecurity risk assessment describe how the product minimises negative impacts on the availability of services provided by connected devices or networks, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                { "title": "Yes", "type": "choice" },
+                { "title": "No", "type": "choice" },
+                { "title": "In Progress", "type": "choice" }
+              ],
+              "info": "Products with digital elements shall minimise the negative impact by the products themselves or connected devices on the availability of services provided by other devices or networks."
+            },
+            {
+              "title": "Attack surface reduction",
+              "content": "Does the cybersecurity risk assessment describe how the product limits attack surfaces, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                { "title": "Yes", "type": "choice" },
+                { "title": "No", "type": "choice" },
+                { "title": "In Progress", "type": "choice" }
+              ],
+              "info": "Products with digital elements shall be be designed, developed and produced to limit attack surfaces, including external interfaces."
+            },
+            {
+              "title": "Exploitation mitigation",
+              "content": "Does the cybersecurity risk assessment describe how the product reduces the impact of incidents, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                { "title": "Yes", "type": "choice" },
+                { "title": "No", "type": "choice" },
+                { "title": "In Progress", "type": "choice" }
+              ],
+              "info": "Products with digital elements shall be designed, developed and produced to reduce the impact of an incident using appropriate exploitation mitigation mechanisms and techniques."
+            },
+            {
+              "title": "Security event logging and monitoring",
+              "content": "Does the cybersecurity risk assessment describe how the product records and monitors relevant internal activities, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                { "title": "Yes", "type": "choice" },
+                { "title": "No", "type": "choice" },
+                { "title": "In Progress", "type": "choice" }
+              ],
+              "info": "Products with digital elements shall provide security related information by recording and monitoring relevant internal activity, including the access to or modification of data, services or functions, with an opt-out mechanism for the user."
+            },
+            {
+              "title": "Secure data and settings removal",
+              "content": "Does the cybersecurity risk assessment describe how users can securely and permanently remove data and settings, and securely transfer data, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                { "title": "Yes", "type": "choice" },
+                { "title": "No", "type": "choice" },
+                { "title": "In Progress", "type": "choice" }
+              ],
+              "info": "Products with digital elements shall provide the possibility for users to securely and easily remove on a permanent basis all data and settings and, where such data can be transferred to other products or systems, ensure that this is done in a secure manner."
+            }
+          ]
+        },
+        {
           "title": "PDE general description",
           "description": "A manufacturer shall identify:<ul><li>PDE's intended purpose;</li><li>Versions of software affecting compliance with essential cybersecurity requirements;</li><li>Where the PDE is a hardware product, photographs or illustrations showing external features, marking and internal layout;</li><li>User information and instructions</li></ul>",
           "questions": [
@@ -74,7 +353,7 @@
           "description": "Manufacturers shall ensure that PDEs are accompanied by information and instructions to the user in paper or electronic form. Such information and instructions shall be provided in a language which can be easily understood by users and market surveillance authorities. They shall be clear, understandable, intelligible and legible. They shall allow for the secure installation, operation and use of products with digital elements. Manufacturers shall keep the information and instructions to the user at the disposal of users and market surveillance authorities for at least 10 years after the product with digital elements has been placed on the market or for the support period, whichever is longer. Where such information and instructions are provided online, manufacturers shall ensure that they are accessible, user-friendly and available online for at least 10 years after the product with digital elements has been placed on the market or for the support period, whichever is longer.",
           "questions": [
             {
-              "title": "Information and instructions to the user availability",
+              "title": "Availability of information and instructions to the user",
               "content": "Are you prepared to keep the information and instructions to the user at the disposal of users and market surveillance authorities for at least 10 years after the PDE has been placed on the market or for the support period, whichever is longer?",
               "type": "mchoices",
               "responses": [
@@ -212,7 +491,7 @@
               ]
             },
             {
-              "title": "EU declaration of conformity",
+              "title": "EU declaration of conformity access",
               "content": "Have you produce an EU declaration of conformity? If yes, do information and instructions to the user include the internet address at which the EU declaration of conformity can be accessed",
               "type": "mchoices",
               "responses": [
@@ -274,7 +553,7 @@
               "info":"Instructions about the following shall be provided:<ul><li>the necessary measures during initial commissioning and throughout the lifetime of the product with digital elements to ensure its secure use</li><li>how changes to the product with digital elements can affect the security of data</li><li>how security-relevant updates can be installed</li><li>the secure decommissioning of the product with digital elements, including information on how user data can be securely removed</li><li>how the default setting enabling the automatic installation of security updates, as required by Part I, point (2)(c), of Annex I, can be turned off</li><li>where the product with digital elements is intended for integration into other products with digital elements, the information necessary for the integrator to comply with the essential cybersecurity requirements set out in Annex I and the documentation requirements set out in Annex VII of the regulation</li></ul>"
             },
             {
-              "title": "Software bill of materials ",
+              "title": "Software Bill of Materials ",
               "content": "Will the software bill of materials be available to the user? If yes, do information and instructions to the user include information on where the software bill of materials can be accessed?",
               "type": "mchoices",
               "responses": [
