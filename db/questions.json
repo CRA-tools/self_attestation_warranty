@@ -536,7 +536,7 @@
           "questions": [
             {
               "title": "Support Period",
-              "content": "Have you determined an appropriate support period for the PDE?",
+              "content": "Have you determined and documented the support period for the PDE?",
               "type": "mchoices",
               "responses": [
                 {
@@ -556,7 +556,7 @@
             },
             {
               "title": "Ηarmonised standards and technical specifications",
-              "content": "Does the “information for the support period” contain the declared support period (dates or duration)?",
+              "content": "Have you documented the harmonised standards or solutions adopted to meet the essential cybersecurity requirements of the regulation?",
               "type": "mchoices",
               "responses": [
                 {
@@ -572,7 +572,7 @@
                   "type": "choice"
                 }
               ],
-              "info": "Example: Security updates provided until 31 December 2030.Reference: Annex VII (4)"
+              "info": "A manufacturer shall document a list of the harmonised standards applied in full or in part the references of which have been published in the Official Journal of the European Union, common specifications as set out in Article 27 of the Regulation or European cybersecurity certification schemes adopted pursuant to Regulation (EU) 2019/881 pursuant to Article 27(8) of the Regulation, and, where those harmonised standards, common specifications or European cybersecurity certification schemes have not been applied, descriptions of the solutions adopted to meet the essential cybersecurity requirements set out in Parts I and II of Annex I of the regulation, including a list of other relevant technical specifications applied. In the event of partly applied harmonised standards, common specifications or European cybersecurity certification schemes, the technical documentation shall specify the parts which have been applied"
             },
             {
               "title": "Test reports",
