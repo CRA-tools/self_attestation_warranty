@@ -141,6 +141,15 @@ document.addEventListener('DOMContentLoaded', () => {
         progressItem.appendChild(progressBar);
         globalProgressContainer.appendChild(progressItem);
       });
+
+      const reportButton = document.createElement('button');
+      reportButton.type = 'button';
+      reportButton.className = 'btn btn-outline-primary';
+      reportButton.textContent = 'View report';
+      reportButton.addEventListener('click', () => {
+        generateReport(sections, form);
+      });
+      globalProgressContainer.appendChild(reportButton);
       
       form.appendChild(globalProgressContainer);
 
@@ -215,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (q.type === 'mchoices' && Array.isArray(q.responses)) {
             const choicesWrapper = document.createElement('div');
             
-            const fieldName = q.id || `q_${sIdx}_${qIdx}`;
+            const fieldName = getQuestionFieldName(q, sIdx, qIdx);
             
             // Add choice responses as radio buttons
             q.responses.forEach((resp, respIdx) => {
@@ -249,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const textarea = document.createElement('textarea');
             textarea.className = 'form-control';
             textarea.rows = 3;
-            textarea.name = q.id || `q_${sIdx}_${qIdx}`;
+            textarea.name = getQuestionFieldName(q, sIdx, qIdx);
             textarea.placeholder = 'Your answer';
             qWrap.appendChild(textarea);
           }
@@ -279,20 +288,12 @@ document.addEventListener('DOMContentLoaded', () => {
       nextBtn.className = 'btn btn-primary';
       nextBtn.textContent = 'Next';
 
-      // Submit button (only shown on last panel)
-      const submit = document.createElement('button');
-      submit.type = 'submit';
-      submit.className = 'btn btn-success';
-      submit.textContent = 'Submit';
-      submit.style.display = 'none';
-
       nav.appendChild(prevBtn);
       nav.appendChild(pageInfo);
       
       const rightGroup = document.createElement('div');
       rightGroup.className = 'd-flex gap-2';
       rightGroup.appendChild(nextBtn);
-      rightGroup.appendChild(submit);
       nav.appendChild(rightGroup);
 
       form.appendChild(panels);
@@ -328,7 +329,6 @@ document.addEventListener('DOMContentLoaded', () => {
         prevBtn.disabled = idx === 0;
         const last = idx === panelEls.length - 1;
         nextBtn.style.display = last ? 'none' : '';
-        submit.style.display = last ? '' : 'none';
         pageInfo.textContent = `Section ${idx + 1} of ${panelEls.length}`;
       }
 
@@ -351,22 +351,116 @@ document.addEventListener('DOMContentLoaded', () => {
           updateProgressBars();
         });
       });
-
-      // handle submit
-      form.addEventListener('submit', (ev) => {
-        ev.preventDefault();
-        const fd = new FormData(form);
-        const result = {};
-        for (const [k, v] of fd.entries()) result[k] = v;
-        console.log('Form answers:', result);
-        alert('Answers logged to console.');
-      });
     })
     .catch((err) => {
       console.error(err);
       showError('Failed to load questions.json from server.');
     });
 });
+
+function getQuestionFieldName(question, sectionIndex, questionIndex) {
+  return question.id || `q_${sectionIndex}_${questionIndex}`;
+}
+
+function getReportStatus(response) {
+  const value = String(response || '').trim().toLowerCase();
+
+  if (value === 'yes' || value === 'not applicable') {
+    return { color: '#198754', label: 'Yes / Not Applicable' };
+  }
+
+  if (value === 'no') {
+    return { color: '#dc3545', label: 'No' };
+  }
+
+  return { color: '#fd7e14', label: value === 'in progress' ? 'In Progress' : 'Not Answered' };
+}
+
+function generateReport(sections, form) {
+  const reportWindow = window.open('', '_blank');
+  if (!reportWindow) {
+    alert('Unable to open report window. Please allow pop-ups for this site.');
+    return;
+  }
+
+  const formData = new FormData(form);
+  const doc = reportWindow.document;
+
+  doc.open();
+  doc.write(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRA Self-attestation report</title>
+  <style>
+    body {
+      color: #212529;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin: 0 0 1.5rem;
+    }
+    h2 {
+      border-bottom: 1px solid #dee2e6;
+      font-size: 1.25rem;
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+    }
+    .question {
+      align-items: center;
+      display: flex;
+      gap: 0.625rem;
+      margin: 0.5rem 0;
+    }
+    .status-dot {
+      border-radius: 50%;
+      display: inline-block;
+      flex: 0 0 auto;
+      height: 0.75rem;
+      width: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>CRA Self-attestation report</h1>
+</body>
+</html>`);
+  doc.close();
+
+  const body = doc.body;
+  sections.forEach((section, sIdx) => {
+    const sectionTitle = doc.createElement('h2');
+    sectionTitle.textContent = section.title || `Section ${sIdx + 1}`;
+    body.appendChild(sectionTitle);
+
+    const questions = Array.isArray(section.questions) ? section.questions : (Array.isArray(section.items) ? section.items : []);
+    questions.forEach((question, qIdx) => {
+      const response = formData.get(getQuestionFieldName(question, sIdx, qIdx));
+      const status = getReportStatus(response);
+
+      const questionRow = doc.createElement('div');
+      questionRow.className = 'question';
+
+      const dot = doc.createElement('span');
+      dot.className = 'status-dot';
+      dot.style.backgroundColor = status.color;
+      dot.setAttribute('aria-label', status.label);
+      dot.title = status.label;
+
+      const title = doc.createElement('span');
+      title.textContent = question.title || question.name || `Question ${qIdx + 1}`;
+
+      questionRow.appendChild(dot);
+      questionRow.appendChild(title);
+      body.appendChild(questionRow);
+    });
+  });
+}
 
 // Function to update global progress bars across all sections
 function updateProgressBars() {
