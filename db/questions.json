@@ -428,7 +428,7 @@
           "questions": [
             {
               "title": "Intended purpose and reasonably foreseeable use",
-              "content": "Have you documented PDE's intended purpose and reasonably foreseeable use",
+              "content": "Does the technical documentation contain PDE's intended purpose and reasonably foreseeable use",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
@@ -439,7 +439,7 @@
             },
             {
               "title": "Versions of software",
-              "content": "Have you documented PDE's versions of software affecting compliance with essential cybersecurity requirements",
+              "content": "Does the technical documentation contain PDE's versions of software affecting compliance with essential cybersecurity requirements",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
@@ -449,15 +449,14 @@
             },
             {
               "title": "Visual and Images of PDE",
-              "content": "Is your PDE a hardware product? If yes, can you provide photographs or illustrations showing external features, marking and internal layout?",
+              "content": "Is your PDE a hardware product? If yes, does the technical documentation contain photographs or illustrations showing external features, marking and internal layout?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"},
                 {"title": "Not Applicable", "type": "choice"}
-              ],
-              "info": "Example: Photo showing general hardware, CE mark, serial number, and model label."
+              ]
             }
           ]
         },
@@ -466,70 +465,37 @@
           "description": "The Technical documentation of a PDE shall contain a description of the design, development and production of the PDE and vulnerability handling processes, including:<ul><li>necessary information on the design and development of the PDE, including, where applicable, drawings and schemes and a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing;</li><li>necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including the software bill of materials, the coordinated vulnerability disclosure policy, evidence of the provision of a contact address for the reporting of the vulnerabilities and a description of the technical solutions chosen for the secure distribution of updates;</li></ul>",
           "questions": [
             {
-              "title": "Design, Development & Production for Security",
-              "content": "Does the “description of the design, development and production” contain how was the product designed, developed, and produced to include security?",
+              "title": "Information on the design and development of the PDE",
+              "content": "Does the technical documentation  contain how was the product designed, developed, and produced to include security?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: Description of secure design approach, architecture overview.Reference: Annex VII (2)(a)"
+              "info": "The technical documentation shall contain necessary information on the design and development of the product with digital elements, including, where applicable, drawings and schemes and a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing"
             },
             {
               "title": "Vulnerability Handling Process",
-              "content": "Does the “description of the design, development and production” contain how do you handle vulnerabilities (intake, triage, remediation)?",
+              "content": "Does the technical documentation contain a vulnerability handling process?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: Coordinated vulnerability disclosure policy and process flow.Reference: Annex VII (2)(b)"
+              "info": "The technical documentation shall contain necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including the software bill of materials, the coordinated vulnerability disclosure policy, evidence of the provision of a contact address for the reporting of the vulnerabilities and a description of the technical solutions chosen for the secure distribution of updates"
             },
             {
-              "title": "Component & Data Flow Documentation",
-              "content": "Does the “description of the design, development and production” contain how components and data flows are documented?",
+              "title": "Production and monitoring processes",
+              "content": "Does the technical documentation contain information and specifications of the production and monitoring processes of the PDE?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: SBOM in the case of software, HBOM in the case of hardware.Reference: Annex VII (2)(b)"
-            },
-            {
-              "title": "Security Update Process",
-              "content": "Does the “description of the design, development and production” contain how security updates are tested, signed, and distributed??",
-              "type": "mchoices",
-              "responses": [
-                {"title": "Yes", "type": "choice"},
-                {"title": "No", "type": "choice"},
-                {"title": "In Progress", "type": "choice"}
-              ],
-              "info": "Example: Signed updates verified through digital signature checks.Reference: Annex VII (2)(b)"
-            },
-            {
-              "title": "Secure Manufacturing & Provisioning Steps",
-              "content": "Does the “description of the design, development and production” contain what secure manufacturing and provisioning steps are applied?",
-              "type": "mchoices",
-              "responses": [
-                {"title": "Yes", "type": "choice"},
-                {"title": "No", "type": "choice"},
-                {"title": "In Progress", "type": "choice"}
-              ],
-              "info": "Example: Secure firmware installation, identity checks, integrity verification.Reference: Annex VII (2)(c)"
-            },
-            {
-              "title": "Monitoring & Validation Activities",
-              "content": "Does the “description of the design, development and production” contain what monitoring and validation activities are in place?",
-              "type": "mchoices",
-              "responses": [
-                {"title": "Yes", "type": "choice"},
-                {"title": "No", "type": "choice"},
-                {"title": "In Progress", "type": "choice"}
-              ],
-              "info": "Example: Telemetry to detect update failures; incident tracking dashboard.Reference: Annex VII (2)(c)"
+              "info": "The technical documentation shall contain the necessary information and specifications of the production and monitoring processes of the product with digital elements and the validation of those processes"
             }
           ]
         },
@@ -539,7 +505,7 @@
           "questions": [
             {
               "title": "Support Period",
-              "content": "Have you determined and documented the support period for the PDE?",
+              "content": "Does the technical documentation contain information that was taken into account to determine the support period of the PDE?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
@@ -550,7 +516,7 @@
             },
             {
               "title": "Ηarmonised standards and technical specifications",
-              "content": "Have you documented the harmonised standards or solutions adopted to meet the essential cybersecurity requirements of the regulation?",
+              "content": "Does the technical documentation contain information about the harmonised standards or solutions adopted to meet the essential cybersecurity requirements of the regulation?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
@@ -561,36 +527,37 @@
             },
             {
               "title": "Test reports",
-              "content": "Does the “information for the support period” contain where the support period is communicated to users??",
+              "content": "Does the technical documentation contain reports of the tests carried out to verify the conformity of the PDE?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: On website, packaging, or in product interface.Reference: Annex VII (4)"
+              "info": "The technical documentation shall contain reports of the tests carried out to verify the conformity of the product with digital elements and of the vulnerability handling processes with the applicable essential cybersecurity requirements as set out in Parts I and II of Annex I of the regulation"
             },
             {
               "title": "EU declaration of conformity",
-              "content": "Does the “information for the support period” contain how the support period links to the risk assessment and update plan??",
+              "content": "Does the technical documentation contain a copy of the EU declaration of conformity",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: Risk analysis shows update relevance through lifecycle.Reference: Annex VII (4)"
+              "info": "Manufacturers shall either provide a copy of the EU declaration of conformity or a simplified EU declaration of conformity with the product with digital elements. Where a simplified EU declaration of conformity is provided, it shall contain the exact internet address at which the full EU declaration of conformity can be accessed. The information that shall be included in the EU declaration of conformity is specified in Annex V of the regulation. The information that shall be included in the simplified EU declaration of conformity is specified in Annex VI of the regulation"
             },
-             {
+            {
               "title": "Software bill of material",
-              "content": "Does the “information for the support period” contain how the support period links to the risk assessment and update plan??",
+              "content": "Have you produced an SBOM? If yes, does the technical documentation contain the SBOM?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
-                {"title": "In Progress", "type": "choice"}
+                {"title": "In Progress", "type": "choice"},
+                {"title": "Not Applicable", "type": "choice"}
               ],
-              "info": "Example: Risk analysis shows update relevance through lifecycle.Reference: Annex VII (4)"
+              "info": "Where applicable, the software bill of materials, further to a reasoned request from a market surveillance authority provided that it is necessary in order for that authority to be able to check compliance with the essential cybersecurity requirements set out in Annex I"
             }
           ]
         }
