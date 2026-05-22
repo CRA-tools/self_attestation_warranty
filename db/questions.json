@@ -2,7 +2,7 @@
       "sections": [
         {
           "title": "Cybersecurity risks assessment - general requirements",
-          "description": " When placing a product with digital elements on the market, manufacturers shall ensure that it has been designed, developed and produced in accordance with the essential cybersecurity requirements set out in Part I of Annex I of the regulation. For this purpose,  manufacturers shall undertake an assessment of the cybersecurity risks associated with a product with digital elements and take the outcome of that assessment into account during the planning, design, development, production, delivery and maintenance phases of the product with digital elements with a view to minimising cybersecurity risks, preventing incidents and minimising their impact, including in relation to the health and safety of users",
+          "description": " When placing a PDE on the market, manufacturers shall ensure that it has been designed, developed and produced in accordance with the essential cybersecurity requirements set out in Part I of Annex I of the regulation. For this purpose,  manufacturers shall undertake an assessment of the cybersecurity risks associated with a PDE and take the outcome of that assessment into account during the planning, design, development, production, delivery and maintenance phases of the PDE with a view to minimising cybersecurity risks, preventing incidents and minimising their impact, including in relation to the health and safety of users",
           "questions":[
             {
               "title": "Documented and Maintained Cybersecurity Risk Assessment",
@@ -82,7 +82,7 @@
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Products with digital elements shall be made available on the market with a secure-by-default configuration, including the possibility to reset the product to its original state, unless otherwise agreed between the manufacturer and the business user for a tailor-made product with digital elements."
+              "info": "Products with digital elements shall be made available on the market with a secure-by-default configuration, including the possibility to reset the product to its original state, unless otherwise agreed between the manufacturer and the business user for a tailor-made PDE."
             },
             {
               "title": "Security updates and vulnerability remediation",
@@ -137,7 +137,7 @@
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Products with digital elements shall process only data, personal or other, that are adequate, relevant and limited to what is necessary in relation to the intended purpose of the product with digital elements (data minimisation)."
+              "info": "Products with digital elements shall process only data, personal or other, that are adequate, relevant and limited to what is necessary in relation to the intended purpose of the PDE (data minimisation)."
             },
             {
               "title": "Availability and resilience",
@@ -242,7 +242,7 @@
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Manufacturers of products with digital elements shall apply effective and regular tests and reviews of the security of the product with digital elements."
+              "info": "Manufacturers of products with digital elements shall apply effective and regular tests and reviews of the security of the PDE."
             },
             {
               "title": "Disclosure information about fixed vulnerabilities",
@@ -253,52 +253,57 @@
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Manufacturers of products with digital elements shall, once a security update has been made available, share and publicly disclose information about fixed vulnerabilities, including a description of the vulnerabilities, information allowing users to identify the product with digital elements affected, the impacts of the vulnerabilities, their severity and clear and accessible information helping users to remediate the vulnerabilities; in duly justified cases, where manufacturers consider the security risks of publication to outweigh the security benefits, they may delay making public information regarding a fixed vulnerability until after users have been given the possibility to apply the relevant patch."
-          }
-          ]
-        },
-        {
-          "title": "PDE general description",
-          "description": "A manufacturer shall identify:<ul><li>PDE's intended purpose;</li><li>Versions of software affecting compliance with essential cybersecurity requirements;</li><li>Where the PDE is a hardware product, photographs or illustrations showing external features, marking and internal layout;</li><li>User information and instructions</li></ul>",
-          "questions": [
-            {
-              "title": "Intended purpose and reasonably foreseeable use",
-              "content": "Have you documented PDE's intended purpose and reasonably foreseeable use",
+              "info": "Manufacturers of products with digital elements shall, once a security update has been made available, share and publicly disclose information about fixed vulnerabilities, including a description of the vulnerabilities, information allowing users to identify the PDE affected, the impacts of the vulnerabilities, their severity and clear and accessible information helping users to remediate the vulnerabilities; in duly justified cases, where manufacturers consider the security risks of publication to outweigh the security benefits, they may delay making public information regarding a fixed vulnerability until after users have been given the possibility to apply the relevant patch."
+          },
+          {
+              "title": "Coordinated vulnerability disclosure policy",
+              "content": "Does your cybersecurity risk assessment document describe a policy and process for coordinated vulnerability disclosure?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": " <b>Intended purpose</b> means the use for which a PDE is intended by the manufacturer, including the specific context and conditions of use, as specified in the information supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation;Example: Smart sensor for home use; connects via Wi-Fi; typical user: consumer. <b>Reasonably foreseeable use</b> means use that is not necessarily the intended purpose supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation, but which is likely to result from reasonably foreseeable human behaviour or technical operations or interactions"
+              "info": "Manufacturers of products with digital elements shall put in place and enforce a policy on coordinated vulnerability disclosure."
             },
             {
-              "title": "Versions of software",
-              "content": "Have you documented PDE's versions of software affecting compliance with essential cybersecurity requirements",
+              "title": "Vulnerability reporting and information sharing",
+              "content": "Does your cybersecurity risk assessment document describe measures for facilitating the reporting and sharing of information about vulnerabilities, including the provision of a contact address for vulnerability reporting?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
-              ]
+              ],
+              "info": "Manufacturers of products with digital elements shall take measures to facilitate the sharing of information about potential vulnerabilities in their PDE as well as in third-party components contained in that product, including by providing a contact address for the reporting of the vulnerabilities discovered in the PDE."
             },
             {
-              "title": "Visual and Images of PDE",
-              "content": "Is your PDE a hardware product? If yes, can you provide photographs or illustrations showing external features, marking and internal layout?",
+              "title": "Secure update mechanisms",
+              "content": "Does your cybersecurity risk assessment document describe mechanisms for securely and automatically distributing security updates?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
-                {"title": "In Progress", "type": "choice"},
-                {"title": "Not Applicable", "type": "choice"}
+                {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: Photo showing general hardware, CE mark, serial number, and model label."
+              "info": "Manufacturers of products with digital elements shall provide  mechanisms to securely distribute updates for products with digital elements to ensure that vulnerabilities are fixed or mitigated in a timely manner and, where applicable for security updates, in an automatic manner."
+            },
+            {
+              "title": "Security update processes",
+              "content": "Does your cybersecurity risk assessment document describe a process for disseminating security updates?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Manufacturers of products with digital elements shall ensure that, where security updates are available to address identified security issues, they are disseminated without delay and, unless otherwise agreed between a manufacturer and a business user in relation to a tailor-made PDE, free of charge, accompanied by advisory messages providing users with the relevant information, including on potential action to be taken."
             }
           ]
         },
         {
           "title": "Information and instructions to the user",
-          "description": "Manufacturers shall ensure that PDEs are accompanied by information and instructions to the user in paper or electronic form. Such information and instructions shall be provided in a language which can be easily understood by users and market surveillance authorities. They shall be clear, understandable, intelligible and legible. They shall allow for the secure installation, operation and use of products with digital elements. Manufacturers shall keep the information and instructions to the user at the disposal of users and market surveillance authorities for at least 10 years after the product with digital elements has been placed on the market or for the support period, whichever is longer. Where such information and instructions are provided online, manufacturers shall ensure that they are accessible, user-friendly and available online for at least 10 years after the product with digital elements has been placed on the market or for the support period, whichever is longer.",
+          "description": "Manufacturers shall ensure that PDEs are accompanied by information and instructions to the user in paper or electronic form. Such information and instructions shall be provided in a language which can be easily understood by users and market surveillance authorities. They shall be clear, understandable, intelligible and legible. They shall allow for the secure installation, operation and use of products with digital elements. Manufacturers shall keep the information and instructions to the user at the disposal of users and market surveillance authorities for at least 10 years after the PDE has been placed on the market or for the support period, whichever is longer. Where such information and instructions are provided online, manufacturers shall ensure that they are accessible, user-friendly and available online for at least 10 years after the PDE has been placed on the market or for the support period, whichever is longer.",
           "questions": [
             {
               "title": "Availability of information and instructions to the user",
@@ -312,7 +317,7 @@
             },
             {
               "title": "Information and instructions to the user, online access",
-              "content": "Are information and instructions to the user provide online? If yes, have you ensured that they are accessible, user-friendly and available online for at least 10 years after the product with digital elements has been placed on the market or for the support period, whichever is longer.",
+              "content": "Are information and instructions to the user provide online? If yes, have you ensured that they are accessible, user-friendly and available online for at least 10 years after the PDE has been placed on the market or for the support period, whichever is longer.",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
@@ -364,7 +369,7 @@
             },
             {
               "title": "Circumstances which may lead to cybersecurity risks",
-              "content": "Do information and instructions to the user include any known or foreseeable circumstance, related to the use of the product with digital elements in accordance with its intended purpose or under conditions of reasonably foreseeable misuse, which may lead to significant cybersecurity risks?",
+              "content": "Do information and instructions to the user include any known or foreseeable circumstance, related to the use of the PDE in accordance with its intended purpose or under conditions of reasonably foreseeable misuse, which may lead to significant cybersecurity risks?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
@@ -402,7 +407,7 @@
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info":"Instructions about the following shall be provided:<ul><li>the necessary measures during initial commissioning and throughout the lifetime of the product with digital elements to ensure its secure use</li><li>how changes to the product with digital elements can affect the security of data</li><li>how security-relevant updates can be installed</li><li>the secure decommissioning of the product with digital elements, including information on how user data can be securely removed</li><li>how the default setting enabling the automatic installation of security updates, as required by Part I, point (2)(c), of Annex I, can be turned off</li><li>where the product with digital elements is intended for integration into other products with digital elements, the information necessary for the integrator to comply with the essential cybersecurity requirements set out in Annex I and the documentation requirements set out in Annex VII of the regulation</li></ul>"
+              "info":"Instructions about the following shall be provided:<ul><li>the necessary measures during initial commissioning and throughout the lifetime of the PDE to ensure its secure use</li><li>how changes to the PDE can affect the security of data</li><li>how security-relevant updates can be installed</li><li>the secure decommissioning of the PDE, including information on how user data can be securely removed</li><li>how the default setting enabling the automatic installation of security updates, as required by Part I, point (2)(c), of Annex I, can be turned off</li><li>where the PDE is intended for integration into other products with digital elements, the information necessary for the integrator to comply with the essential cybersecurity requirements set out in Annex I and the documentation requirements set out in Annex VII of the regulation</li></ul>"
             },
             {
               "title": "Software Bill of Materials ",
@@ -418,8 +423,47 @@
           ]
         },
         {
-          "title": "Technical documentation, description of the Design, Development and Production",
-          "description": "The Technical documentation of a product with digital elements shall contain a description of the design, development and production of the product with digital elements and vulnerability handling processes, including:<ul><li>necessary information on the design and development of the product with digital elements, including, where applicable, drawings and schemes and a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing;</li><li>necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including the software bill of materials, the coordinated vulnerability disclosure policy, evidence of the provision of a contact address for the reporting of the vulnerabilities and a description of the technical solutions chosen for the secure distribution of updates;</li></ul>",
+          "title": "Technical documentation - PDE general description",
+          "description": "A manufacturer shall identify:<ul><li>PDE's intended purpose;</li><li>Versions of software affecting compliance with essential cybersecurity requirements;</li><li>Where the PDE is a hardware product, photographs or illustrations showing external features, marking and internal layout;</li><li>User information and instructions</li></ul>",
+          "questions": [
+            {
+              "title": "Intended purpose and reasonably foreseeable use",
+              "content": "Have you documented PDE's intended purpose and reasonably foreseeable use",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": " <b>Intended purpose</b> means the use for which a PDE is intended by the manufacturer, including the specific context and conditions of use, as specified in the information supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation;Example: Smart sensor for home use; connects via Wi-Fi; typical user: consumer. <b>Reasonably foreseeable use</b> means use that is not necessarily the intended purpose supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation, but which is likely to result from reasonably foreseeable human behaviour or technical operations or interactions"
+            },
+            {
+              "title": "Versions of software",
+              "content": "Have you documented PDE's versions of software affecting compliance with essential cybersecurity requirements",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Visual and Images of PDE",
+              "content": "Is your PDE a hardware product? If yes, can you provide photographs or illustrations showing external features, marking and internal layout?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"},
+                {"title": "Not Applicable", "type": "choice"}
+              ],
+              "info": "Example: Photo showing general hardware, CE mark, serial number, and model label."
+            }
+          ]
+        },
+        {
+          "title": "Technical documentation - description of the Design, Development and Production",
+          "description": "The Technical documentation of a PDE shall contain a description of the design, development and production of the PDE and vulnerability handling processes, including:<ul><li>necessary information on the design and development of the PDE, including, where applicable, drawings and schemes and a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing;</li><li>necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including the software bill of materials, the coordinated vulnerability disclosure policy, evidence of the provision of a contact address for the reporting of the vulnerabilities and a description of the technical solutions chosen for the secure distribution of updates;</li></ul>",
           "questions": [
             {
               "title": "Design, Development & Production for Security",
@@ -490,68 +534,7 @@
           ]
         },
         {
-          "title": "Technical documentation, assessment of the Cybersecurity Risks",
-          "description": "The technical documentation shall include an assessment of the cybersecurity risks against which the product with digital elements is designed, developed, produced, delivered, and maintained. The risk assessment should be based upon the reasonable foreseeable use  and the intended purpose of the product. This assessment shall describe:- the operational environment, conditions of use, and assets requiring protection;- the cybersecurity risks identified throughout the product’s lifecycle;- how the essential cybersecurity requirements set out in Part I of Annex I (will add info section the app) apply to the product; and- how those requirements are implemented as informed by the cybersecurity risk assessment.It shall also indicate how you apply Part I, point (1) of Annex I and the vulnerability handling requirements set out in Part II of Annex I.",
-          "questions": [
-            {
-              "title": "Risk Assessment Method or Standard",
-              "content": "Does the “assessment of the cybersecurity risks” contain which method or standard was used for the risk assessment?",
-              "type": "mchoices",
-              "responses": [
-                {"title": "Yes", "type": "choice"},
-                {"title": "No", "type": "choice"},
-                {"title": "In Progress", "type": "choice"}
-              ],
-              "info": "Example: ISO 27005, ENISA, or internal threat modelling.Reference: Annex VII (3)"
-            },
-            {
-              "title": "Risks, Threats, Impacts & Treatments",
-              "content": "Does the “assessment of the cybersecurity risks” contain the main risks, threats, impacts, and treatments identified?",
-              "type": "mchoices",
-              "responses": [
-                {"title": "Yes", "type": "choice"},
-                {"title": "No", "type": "choice"},
-                {"title": "In Progress", "type": "choice"}
-              ],
-              "info": "Example: Data breach from unsecured Wi-Fi Access Point; Impact: high; Mitigation: encryption.Reference: Annex VII (3)"
-            },
-            {
-              "title": "Link Between Risks, Controls & Test Results",
-              "content": "Does the “assessment of the cybersecurity risks” contain how design risks are linked to design controls and test results?",
-              "type": "mchoices",
-              "responses": [
-                {"title": "Yes", "type": "choice"},
-                {"title": "No", "type": "choice"},
-                {"title": "In Progress", "type": "choice"}
-              ],
-              "info": "Example: Risk-control-test matrix; mapping table.Reference: Annex VII (3)"
-            },
-            {
-              "title": "Residual Risks & Acceptance Rationale",
-              "content": "Does the “assessment of the cybersecurity risks” contain which residual risks remain and why they are acceptable?",
-              "type": "mchoices",
-              "responses": [
-                {"title": "Yes", "type": "choice"},
-                {"title": "No", "type": "choice"},
-                {"title": "In Progress", "type": "choice"}
-              ],
-              "info": "Example: Denial-of-service risk accepted due to limited exposure.Reference: Annex VII (3)"
-            },
-            {
-              "title": "Applicable Essential Requirements (Annex I)",
-              "content": "Does the “assessment of the cybersecurity risks” contain which essential cybersecurity requirements from Annex I?",
-              "type": "mchoices",
-              "responses": [
-                {"title": "Yes", "type": "choice"},
-                {"title": "No", "type": "choice"},
-                {"title": "In Progress", "type": "choice"}
-              ],
-              "info": "Example: -- does not apply due to no wireless connection.Reference: Annex VII (3)"
-            }
-          ]
-        },
-        {
-          "title": "Additional documentation",
+          "title": "Technical documentation - additional information",
           "description": "",
           "questions": [
             {
@@ -563,7 +546,7 @@
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Manufacturers shall ensure, when placing a PDE on the market, and for the support period that vulnerabilities of that product, including its components, are handled effectively and in accordance with the essential cybersecurity requirements set out in Part II of Annex I of the regulation. <br/> Manufacturers shall determine the support period so that it reflects the length of time during which the product is expected to be in use, taking into account, in particular, reasonable user expectations, the nature of the product, including its intended purpose, as well as relevant Union law determining the lifetime of PDEs. When determining the support period, manufacturers may also take into account the support periods of products with digital elements offering a similar functionality placed on the market by other manufacturers, the availability of the operating environment, the support periods of integrated components that provide core functions and are sourced from third parties as well as relevant guidance provided by the dedicated administrative cooperation group (ADCO) and the Commission. The matters to be taken into account in order to determine the support period shall be considered in a manner that ensures proportionality.The support period shall be at least five years. Where the product with digital elements is expected to be in use for less than five years, the support period shall correspond to the expected use time."
+              "info": "Manufacturers shall ensure, when placing a PDE on the market, and for the support period that vulnerabilities of that product, including its components, are handled effectively and in accordance with the essential cybersecurity requirements set out in Part II of Annex I of the regulation. <br/> Manufacturers shall determine the support period so that it reflects the length of time during which the product is expected to be in use, taking into account, in particular, reasonable user expectations, the nature of the product, including its intended purpose, as well as relevant Union law determining the lifetime of PDEs. When determining the support period, manufacturers may also take into account the support periods of products with digital elements offering a similar functionality placed on the market by other manufacturers, the availability of the operating environment, the support periods of integrated components that provide core functions and are sourced from third parties as well as relevant guidance provided by the dedicated administrative cooperation group (ADCO) and the Commission. The matters to be taken into account in order to determine the support period shall be considered in a manner that ensures proportionality.The support period shall be at least five years. Where the PDE is expected to be in use for less than five years, the support period shall correspond to the expected use time."
             },
             {
               "title": "Ηarmonised standards and technical specifications",
