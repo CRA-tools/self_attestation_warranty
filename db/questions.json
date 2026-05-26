@@ -1,699 +1,563 @@
 {
       "sections": [
         {
-          "title": "Technical documentation, general Description",
-          "description": "The Technical documentation of a product with digital elements shall contain a general description of the product with digital elements, including:<ul><li>its intended purpose;</li><li>versions of software affecting compliance with essential cybersecurity requirements;</li><li>where the product with digital elements is a hardware product, photographs or illustrations showing external features, marking and internal layout;</li><li>user information and instructions</li></ul>",
-          "questions": [
+          "title": "Cybersecurity risks assessment - general requirements",
+          "description": " When placing a PDE on the market, manufacturers shall ensure that it has been designed, developed and produced in accordance with the essential cybersecurity requirements set out in Part I of Annex I of the regulation. For this purpose,  manufacturers shall undertake an assessment of the cybersecurity risks associated with a PDE and take the outcome of that assessment into account during the planning, design, development, production, delivery and maintenance phases of the PDE with a view to minimising cybersecurity risks, preventing incidents and minimising their impact, including in relation to the health and safety of users",
+          "questions":[
             {
-              "title": "Intended Purpose & Intended Users",
-              "content": "Does the “general description” of the technical documentation contain the product’s intended purpose and who are its intended users?.",
+              "title": "Documented and Maintained Cybersecurity Risk Assessment",
+              "content":"Have you documented a cybersecurity risks assessment and have you defined an update process for the duration of the lifetime of the product?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "‘intended purpose’ means the use for which a product with digital elements is intended by the manufacturer, including the specific context and conditions of use, as specified in the information supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation;Example: Smart sensor for home use; connects via Wi-Fi; typical user: consumer.Reference: Annex VII (1)(a)"
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
             },
             {
-              "title": "Visual & Images for Product",
-              "content": "Does the “general description” of the technical documentation contain visuals or images to show the product and markings?",
+              "title": "Intended purpose and reasonably foreseeable use",
+              "content":"Does the cybersecurity risk assessment include the intended purpose and reasonably foreseeable use of PDE?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                },
-                {
-                  "title": "Not Applicable",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Photo showing general hardware, CE mark, serial number, and model label.Reference: Annex VII (1)(c)",
-              "allow_na": true
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
             },
             {
-              "title": "Key Conditions & Limitations",
-              "content": "Does the “general description” of the technical documentation contain key conditions or limitations of use?",
+              "title": "PDE operational environment",
+              "content":"Does the cybersecurity risk assessment include information about PDE's operational environment?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: Indoor use only; operating temperature 0–40 °C.Reference: Annex VII (1)"
+              "info": "This refers to the external conditions under which the PDE is used within it intended purpose and reasonably foreseeable use"
             },
             {
-              "title": "Software & Firmware Versions Used",
-              "content": "Does the “general description” of the technical documentation contain information about the software or firmware versions are used in the product?",
+              "title": "Protected assets",
+              "content":"Does the cybersecurity risk assessment include information about PDE's protected assets?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Firmware v2.1.0; App v3.0.2.Reference: Annex VII (1)(b)"
-            },
-            {
-              "title": "Previous Software & Firmware Versions",
-              "content": "Does the “general description” of the technical documentation contain information about previous software or firmware versions that have been placed on the market and are still available to users?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                },
-                {
-                  "title": "Not Applicable",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Firmware v1.1, sold until July 2027.Reference: Annex VII (1)(b)",
-              "allow_na": true
-            },
-            {
-              "title": "Version Identification in the Field",
-              "content": "Does the “general description” of the technical documentation contain information about how can each version of the product be identified in the field?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                },
-                {
-                  "title": "Not Applicable",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Version shown in device interface; model number on label.Reference: Annex VII (1)(b)",
-              "allow_na": true
-            },
-            {
-              "title": "User Information & Instructions",
-              "content": "Does the “general description” of the technical documentation contain user information and instructions?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: User manual.Reference: Annex VII (1)(d)"
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
             }
           ]
         },
         {
-          "title": "Technical documentation, description of the Design, Development and Production",
-          "description": "The Technical documentation of a product with digital elements shall contain a description of the design, development and production of the product with digital elements and vulnerability handling processes, including:<ul><li>necessary information on the design and development of the product with digital elements, including, where applicable, drawings and schemes and a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing;</li><li>necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including the software bill of materials, the coordinated vulnerability disclosure policy, evidence of the provision of a contact address for the reporting of the vulnerabilities and a description of the technical solutions chosen for the secure distribution of updates;</li></ul>",
-          "questions": [
+          "title": "Cybersecurity risks assessment - essential cybersecurity requirements (Part I)",
+          "description": "These questions concern Annex I, Part I of the regulation",
+          "questions":[
             {
-              "title": "Design, Development & Production for Security",
-              "content": "Does the “description of the design, development and production” contain how was the product designed, developed, and produced to include security?",
+              "title": "Security by design",
+              "content":"Does the cybersecurity risk assessment include information how an appropriate level of cybersecurity based on the risks is ensured throughout the the product lifecycle?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: Description of secure design approach, architecture overview.Reference: Annex VII (2)(a)"
+              "info": "Products with digital elements shall be designed, developed and produced in such a way that they ensure an appropriate level of cybersecurity based on the risks"
+            },
+            {
+              "title": "No known vulnerabilities",
+              "content":"Does the cybersecurity risk assessment describe how the \"no known exploitable vulnerabilities\" requirement is implemented, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements, if applicable,  shall be made available on the market without known exploitable vulnerabilities"
+            },
+            {
+              "title": "Secure by default configuration",
+              "content": "Does the cybersecurity risk assessment describe how the product is provided with a secure-by-default configuration, including the ability to reset the product to its original secure state, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall be made available on the market with a secure-by-default configuration, including the possibility to reset the product to its original state, unless otherwise agreed between the manufacturer and the business user for a tailor-made PDE."
+            },
+            {
+              "title": "Security updates and vulnerability remediation",
+              "content": "Does the cybersecurity risk assessment describe how vulnerabilities are addressed through security updates and the corresponding user notification mechanism, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall ensure that vulnerabilities can be addressed through security updates, including, where applicable, automatic security updates enabled by default, clear opt-out mechanisms, user notifications for available updates, and the option to temporarily postpone updates."
+            },
+            {
+              "title": "Protection from unauthorised access",
+              "content": "Does the cybersecurity risk assessment describe how the product is protected against unauthorised and reports possible unauthorised access, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall ensure protection from unauthorised access by appropriate control mechanisms, including but not limited to authentication, identity or access management systems, and report on possible unauthorised access."
+            },
+            {
+              "title": "Confidentiality protection",
+              "content": "Does the cybersecurity risk assessment describe how the confidentiality of stored, transmitted, or processed data is protected, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall pprotect the confidentiality of stored, transmitted or otherwise processed data, personal or other, such as by encrypting relevant data at rest or in transit by state of the art mechanisms, and by using other technical means."
+            },
+            {
+              "title": "Integrity protection",
+              "content": "Does the cybersecurity risk assessment describe how the integrity of data, commands, programs, and configurations is protected against unauthorised modification, and how corruptions are reported, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall protect the integrity of stored, transmitted or otherwise processed data, personal or other, commands, programs and configuration against any manipulation or modification not authorised by the user, and report on corruptions."
+            },
+            {
+              "title": "Data minimisation",
+              "content": "Does the cybersecurity risk assessment describe how the product limits the processing of data to what is necessary for its intended purpose, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall process only data, personal or other, that are adequate, relevant and limited to what is necessary in relation to the intended purpose of the PDE (data minimisation)."
+            },
+            {
+              "title": "Availability and resilience",
+              "content": "Does the cybersecurity risk assessment describe how the product protects the availability of essential functions, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall protect the availability of essential and basic functions, also after an incident, including through resilience and mitigation measures against denial-of-service attacks."
+            },
+            {
+              "title": "Impact on connected services",
+              "content": "Does the cybersecurity risk assessment describe how the product minimises negative impacts on the availability of services provided by connected devices or networks, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall minimise the negative impact by the products themselves or connected devices on the availability of services provided by other devices or networks."
+            },
+            {
+              "title": "Attack surface reduction",
+              "content": "Does the cybersecurity risk assessment describe how the product limits attack surfaces, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall be be designed, developed and produced to limit attack surfaces, including external interfaces."
+            },
+            {
+              "title": "Exploitation mitigation",
+              "content": "Does the cybersecurity risk assessment describe how the product reduces the impact of incidents, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall be designed, developed and produced to reduce the impact of an incident using appropriate exploitation mitigation mechanisms and techniques."
+            },
+            {
+              "title": "Security event logging and monitoring",
+              "content": "Does the cybersecurity risk assessment describe how the product records and monitors relevant internal activities, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall provide security related information by recording and monitoring relevant internal activity, including the access to or modification of data, services or functions, with an opt-out mechanism for the user."
+            },
+            {
+              "title": "Secure data and settings removal",
+              "content": "Does the cybersecurity risk assessment describe how users can securely and permanently remove data and settings, and securely transfer data, or justify why this requirement is not applicable?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Products with digital elements shall provide the possibility for users to securely and easily remove on a permanent basis all data and settings and, where such data can be transferred to other products or systems, ensure that this is done in a secure manner."
+            }
+          ]
+        },
+         {
+          "title": "Cybersecurity risks assessment - essential cybersecurity requirements (Part II)",
+          "description": "These questions concern Annex I, Part II of the regulation",
+          "questions":[
+            {
+              "title": "Vulnerability and component documentation",
+              "content": "Does your cybersecurity risk assessment document describe a process for identifying and documenting vulnerabilities and product components, including the creation of a Software Bill of Materials (SBOM)?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Manufacturers of products with digital elements shall identify and document vulnerabilities and components contained in products with digital elements, including by drawing up a software bill of materials in a commonly used and machine-readable format covering at the very least the top-level dependencies of the products."
+            },
+            {
+              "title": "Vulnerability remediation and security updates",
+              "content": "Does your cybersecurity risk assessment document describe a process for addressing and remediating vulnerabilities without delay, including through the provision of security updates?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Manufacturers of products with digital elements shall, in relation to the risks posed to products with digital elements, address and remediate vulnerabilities without delay, including by providing security updates; where technically feasible, new security updates shall be provided separately from functionality updates."
+            },
+            {
+              "title": "Security testing and review",
+              "content": "Does your cybersecurity risk assessment document describe a process for performing effective and regular security tests and reviews of the product?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Manufacturers of products with digital elements shall apply effective and regular tests and reviews of the security of the PDE."
+            },
+            {
+              "title": "Disclosure information about fixed vulnerabilities",
+              "content": "Does your cybersecurity risk assessment document describe a process for publicly disclosing necessary information about fixed vulnerabilities after security updates become available, including remediation guidance and conditions for delayed disclosure where justified?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Manufacturers of products with digital elements shall, once a security update has been made available, share and publicly disclose information about fixed vulnerabilities, including a description of the vulnerabilities, information allowing users to identify the PDE affected, the impacts of the vulnerabilities, their severity and clear and accessible information helping users to remediate the vulnerabilities; in duly justified cases, where manufacturers consider the security risks of publication to outweigh the security benefits, they may delay making public information regarding a fixed vulnerability until after users have been given the possibility to apply the relevant patch."
+          },
+          {
+              "title": "Coordinated vulnerability disclosure policy",
+              "content": "Does your cybersecurity risk assessment document describe a policy and process for coordinated vulnerability disclosure?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Manufacturers of products with digital elements shall put in place and enforce a policy on coordinated vulnerability disclosure."
+            },
+            {
+              "title": "Vulnerability reporting and information sharing",
+              "content": "Does your cybersecurity risk assessment document describe measures for facilitating the reporting and sharing of information about vulnerabilities, including the provision of a contact address for vulnerability reporting?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Manufacturers of products with digital elements shall take measures to facilitate the sharing of information about potential vulnerabilities in their PDE as well as in third-party components contained in that product, including by providing a contact address for the reporting of the vulnerabilities discovered in the PDE."
+            },
+            {
+              "title": "Secure update mechanisms",
+              "content": "Does your cybersecurity risk assessment document describe mechanisms for securely and automatically distributing security updates?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Manufacturers of products with digital elements shall provide  mechanisms to securely distribute updates for products with digital elements to ensure that vulnerabilities are fixed or mitigated in a timely manner and, where applicable for security updates, in an automatic manner."
+            },
+            {
+              "title": "Security update processes",
+              "content": "Does your cybersecurity risk assessment document describe a process for disseminating security updates?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "Manufacturers of products with digital elements shall ensure that, where security updates are available to address identified security issues, they are disseminated without delay and, unless otherwise agreed between a manufacturer and a business user in relation to a tailor-made PDE, free of charge, accompanied by advisory messages providing users with the relevant information, including on potential action to be taken."
+            }
+          ]
+        },
+        {
+          "title": "Information and instructions to the user",
+          "description": "Manufacturers shall ensure that PDEs are accompanied by information and instructions to the user in paper or electronic form. Such information and instructions shall be provided in a language which can be easily understood by users and market surveillance authorities. They shall be clear, understandable, intelligible and legible. They shall allow for the secure installation, operation and use of products with digital elements. Manufacturers shall keep the information and instructions to the user at the disposal of users and market surveillance authorities for at least 10 years after the PDE has been placed on the market or for the support period, whichever is longer. Where such information and instructions are provided online, manufacturers shall ensure that they are accessible, user-friendly and available online for at least 10 years after the PDE has been placed on the market or for the support period, whichever is longer.",
+          "questions": [
+            {
+              "title": "Availability of information and instructions to the user",
+              "content": "Are you prepared to keep the information and instructions to the user at the disposal of users and market surveillance authorities for at least 10 years after the PDE has been placed on the market or for the support period, whichever is longer?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Information and instructions to the user, online access",
+              "content": "Are information and instructions to the user provide online? If yes, have you ensured that they are accessible, user-friendly and available online for at least 10 years after the PDE has been placed on the market or for the support period, whichever is longer.",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"},
+                {"title": "Not Applicable", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Manufacturer identification and contact information",
+              "content": "Do information and instructions to the user include information related to the manufacturer name, registered trade name or registered trademark, and contact information?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info":"A PDE shall be accompanied with the name, registered trade name or registered trademark of the manufacturer, and the postal address, the email address or other digital contact as well as, where available, the website at which the manufacturer can be contacted"
+            },
+            {
+              "title": "Contact point responsible for vulnerabilities handling",
+              "content": "Do information and instructions to the user include a single point of contact where information about vulnerabilities of the PDE can be reported and received, and where the manufacturer's policy on coordinated vulnerability disclosure can be found?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "PDE identification",
+              "content": "Do information and instructions to the user include name and type and any additional information enabling the unique identification of the PDE",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "PDE intended purpose",
+              "content": "Do information and instructions to the user include information related to the intended purpose of the PDE, as well the security environment provided by the manufacturer, the product's essential functionalities and information about the security properties?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Circumstances which may lead to cybersecurity risks",
+              "content": "Do information and instructions to the user include any known or foreseeable circumstance, related to the use of the PDE in accordance with its intended purpose or under conditions of reasonably foreseeable misuse, which may lead to significant cybersecurity risks?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "EU declaration of conformity access",
+              "content": "Have you produce an EU declaration of conformity? If yes, do information and instructions to the user include the internet address at which the EU declaration of conformity can be accessed",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"},
+                {"title": "Not Applicable", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Technical security support",
+              "content": "Do information and instructions to the user include information related to the type of technical security support offered by the manufacturer and the end-date of the support period during which users can expect vulnerabilities to be handled and to receive security updates?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Instructions",
+              "content": "Do information and instructions to the user include the necessary detailed instructions or an internet address referring to such detailed instructions and information?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info":"Instructions about the following shall be provided:<ul><li>the necessary measures during initial commissioning and throughout the lifetime of the PDE to ensure its secure use</li><li>how changes to the PDE can affect the security of data</li><li>how security-relevant updates can be installed</li><li>the secure decommissioning of the PDE, including information on how user data can be securely removed</li><li>how the default setting enabling the automatic installation of security updates, as required by Part I, point (2)(c), of Annex I, can be turned off</li><li>where the PDE is intended for integration into other products with digital elements, the information necessary for the integrator to comply with the essential cybersecurity requirements set out in Annex I and the documentation requirements set out in Annex VII of the regulation</li></ul>"
+            },
+            {
+              "title": "Software Bill of Materials ",
+              "content": "Will the software bill of materials be available to the user? If yes, do information and instructions to the user include information on where the software bill of materials can be accessed?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"},
+                {"title": "Not Applicable", "type": "choice"}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Technical documentation - PDE general description",
+          "description": "A manufacturer shall identify:<ul><li>PDE's intended purpose;</li><li>Versions of software affecting compliance with essential cybersecurity requirements;</li><li>Where the PDE is a hardware product, photographs or illustrations showing external features, marking and internal layout;</li><li>User information and instructions</li></ul>",
+          "questions": [
+            {
+              "title": "Intended purpose and reasonably foreseeable use",
+              "content": "Does the technical documentation contain PDE's intended purpose and reasonably foreseeable use",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": " <b>Intended purpose</b> means the use for which a PDE is intended by the manufacturer, including the specific context and conditions of use, as specified in the information supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation;Example: Smart sensor for home use; connects via Wi-Fi; typical user: consumer. <b>Reasonably foreseeable use</b> means use that is not necessarily the intended purpose supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation, but which is likely to result from reasonably foreseeable human behaviour or technical operations or interactions"
+            },
+            {
+              "title": "Versions of software",
+              "content": "Does the technical documentation contain PDE's versions of software affecting compliance with essential cybersecurity requirements",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Visual and Images of PDE",
+              "content": "Is your PDE a hardware product? If yes, does the technical documentation contain photographs or illustrations showing external features, marking and internal layout?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"},
+                {"title": "Not Applicable", "type": "choice"}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Technical documentation - description of the Design, Development and Production",
+          "description": "The Technical documentation of a PDE shall contain a description of the design, development and production of the PDE and vulnerability handling processes, including:<ul><li>necessary information on the design and development of the PDE, including, where applicable, drawings and schemes and a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing;</li><li>necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including the software bill of materials, the coordinated vulnerability disclosure policy, evidence of the provision of a contact address for the reporting of the vulnerabilities and a description of the technical solutions chosen for the secure distribution of updates;</li></ul>",
+          "questions": [
+            {
+              "title": "Information on the design and development of the PDE",
+              "content": "Does the technical documentation  contain how was the product designed, developed, and produced to include security?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "The technical documentation shall contain necessary information on the design and development of the product with digital elements, including, where applicable, drawings and schemes and a description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing"
             },
             {
               "title": "Vulnerability Handling Process",
-              "content": "Does the “description of the design, development and production” contain how do you handle vulnerabilities (intake, triage, remediation)?",
+              "content": "Does the technical documentation contain a vulnerability handling process?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: Coordinated vulnerability disclosure policy and process flow.Reference: Annex VII (2)(b)"
+              "info": "The technical documentation shall contain necessary information and specifications of the vulnerability handling processes put in place by the manufacturer, including the software bill of materials, the coordinated vulnerability disclosure policy, evidence of the provision of a contact address for the reporting of the vulnerabilities and a description of the technical solutions chosen for the secure distribution of updates"
             },
             {
-              "title": "Component & Data Flow Documentation",
-              "content": "Does the “description of the design, development and production” contain how components and data flows are documented?",
+              "title": "Production and monitoring processes",
+              "content": "Does the technical documentation contain information and specifications of the production and monitoring processes of the PDE?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: SBOM in the case of software, HBOM in the case of hardware.Reference: Annex VII (2)(b)"
-            },
-            {
-              "title": "Security Update Process",
-              "content": "Does the “description of the design, development and production” contain how security updates are tested, signed, and distributed??",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Signed updates verified through digital signature checks.Reference: Annex VII (2)(b)"
-            },
-            {
-              "title": "Secure Manufacturing & Provisioning Steps",
-              "content": "Does the “description of the design, development and production” contain what secure manufacturing and provisioning steps are applied?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Secure firmware installation, identity checks, integrity verification.Reference: Annex VII (2)(c)"
-            },
-            {
-              "title": "Monitoring & Validation Activities",
-              "content": "Does the “description of the design, development and production” contain what monitoring and validation activities are in place?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Telemetry to detect update failures; incident tracking dashboard.Reference: Annex VII (2)(c)"
+              "info": "The technical documentation shall contain the necessary information and specifications of the production and monitoring processes of the product with digital elements and the validation of those processes"
             }
           ]
         },
         {
-          "title": "Technical documentation, assessment of the Cybersecurity Risks",
-          "description": "The technical documentation shall include an assessment of the cybersecurity risks against which the product with digital elements is designed, developed, produced, delivered, and maintained. The risk assessment should be based upon the reasonable foreseeable use  and the intended purpose of the product. This assessment shall describe:- the operational environment, conditions of use, and assets requiring protection;- the cybersecurity risks identified throughout the product’s lifecycle;- how the essential cybersecurity requirements set out in Part I of Annex I (will add info section the app) apply to the product; and- how those requirements are implemented as informed by the cybersecurity risk assessment.It shall also indicate how you apply Part I, point (1) of Annex I and the vulnerability handling requirements set out in Part II of Annex I.",
+          "title": "Technical documentation - additional information",
+          "description": "",
           "questions": [
             {
-              "title": "Risk Assessment Method or Standard",
-              "content": "Does the “assessment of the cybersecurity risks” contain which method or standard was used for the risk assessment?",
+              "title": "Support Period",
+              "content": "Does the technical documentation contain information that was taken into account to determine the support period of the PDE?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: ISO 27005, ENISA, or internal threat modelling.Reference: Annex VII (3)"
+              "info": "Manufacturers shall ensure, when placing a PDE on the market, and for the support period that vulnerabilities of that product, including its components, are handled effectively and in accordance with the essential cybersecurity requirements set out in Part II of Annex I of the regulation. <br/> Manufacturers shall determine the support period so that it reflects the length of time during which the product is expected to be in use, taking into account, in particular, reasonable user expectations, the nature of the product, including its intended purpose, as well as relevant Union law determining the lifetime of PDEs. When determining the support period, manufacturers may also take into account the support periods of products with digital elements offering a similar functionality placed on the market by other manufacturers, the availability of the operating environment, the support periods of integrated components that provide core functions and are sourced from third parties as well as relevant guidance provided by the dedicated administrative cooperation group (ADCO) and the Commission. The matters to be taken into account in order to determine the support period shall be considered in a manner that ensures proportionality.The support period shall be at least five years. Where the PDE is expected to be in use for less than five years, the support period shall correspond to the expected use time."
             },
             {
-              "title": "Risks, Threats, Impacts & Treatments",
-              "content": "Does the “assessment of the cybersecurity risks” contain the main risks, threats, impacts, and treatments identified?",
+              "title": "Ηarmonised standards and technical specifications",
+              "content": "Does the technical documentation contain information about the harmonised standards or solutions adopted to meet the essential cybersecurity requirements of the regulation?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: Data breach from unsecured Wi-Fi Access Point; Impact: high; Mitigation: encryption.Reference: Annex VII (3)"
+              "info": "A manufacturer shall document a list of the harmonised standards applied in full or in part the references of which have been published in the Official Journal of the European Union, common specifications as set out in Article 27 of the Regulation or European cybersecurity certification schemes adopted pursuant to Regulation (EU) 2019/881 pursuant to Article 27(8) of the Regulation, and, where those harmonised standards, common specifications or European cybersecurity certification schemes have not been applied, descriptions of the solutions adopted to meet the essential cybersecurity requirements set out in Parts I and II of Annex I of the regulation, including a list of other relevant technical specifications applied. In the event of partly applied harmonised standards, common specifications or European cybersecurity certification schemes, the technical documentation shall specify the parts which have been applied"
             },
             {
-              "title": "Link Between Risks, Controls & Test Results",
-              "content": "Does the “assessment of the cybersecurity risks” contain how design risks are linked to design controls and test results?",
+              "title": "Test reports",
+              "content": "Does the technical documentation contain reports of the tests carried out to verify the conformity of the PDE?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: Risk-control-test matrix; mapping table.Reference: Annex VII (3)"
+              "info": "The technical documentation shall contain reports of the tests carried out to verify the conformity of the product with digital elements and of the vulnerability handling processes with the applicable essential cybersecurity requirements as set out in Parts I and II of Annex I of the regulation"
             },
             {
-              "title": "Residual Risks & Acceptance Rationale",
-              "content": "Does the “assessment of the cybersecurity risks” contain which residual risks remain and why they are acceptable?",
+              "title": "EU declaration of conformity",
+              "content": "Does the technical documentation contain a copy of the EU declaration of conformity",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
               ],
-              "info": "Example: Denial-of-service risk accepted due to limited exposure.Reference: Annex VII (3)"
+              "info": "Manufacturers shall either provide a copy of the EU declaration of conformity or a simplified EU declaration of conformity with the product with digital elements. Where a simplified EU declaration of conformity is provided, it shall contain the exact internet address at which the full EU declaration of conformity can be accessed. The information that shall be included in the EU declaration of conformity is specified in Annex V of the regulation. The information that shall be included in the simplified EU declaration of conformity is specified in Annex VI of the regulation"
             },
             {
-              "title": "Applicable Essential Requirements (Annex I)",
-              "content": "Does the “assessment of the cybersecurity risks” contain which essential cybersecurity requirements from Annex I?",
+              "title": "Software bill of material",
+              "content": "Have you produced an SBOM? If yes, does the technical documentation contain the SBOM?",
               "type": "mchoices",
               "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"},
+                {"title": "Not Applicable", "type": "choice"}
               ],
-              "info": "Example: -- does not apply due to no wireless connection.Reference: Annex VII (3)"
-            }
-          ]
-        },
-        {
-          "title": "Technical documentation, support period",
-          "description": "The technical documentation shall include the information that the manufacturer used to determine the support period for the product with digital elements. This information must reflect how long the product is expected to be in use and the factors the manufacturer considered when deciding an appropriate support period. This section should describe:<ul><li>the expected time the product will remain in normal use;</li><li>the intended purpose and reasonably foreseeable use of the product</li></ul>",
-          "questions": [
-            {
-              "title": "Support Period Determination",
-              "content": "Does the “information for the support period” contain how the product’s support period was determined?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Based on OS vendor support roadmap and internal policy.Reference: Annex VII (4)"
-            },
-            {
-              "title": "Declared Support Period",
-              "content": "Does the “information for the support period” contain the declared support period (dates or duration)?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Security updates provided until 31 December 2030.Reference: Annex VII (4)"
-            },
-            {
-              "title": "Support Period Communication",
-              "content": "Does the “information for the support period” contain where the support period is communicated to users??",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: On website, packaging, or in product interface.Reference: Annex VII (4)"
-            },
-            {
-              "title": "Support Period ↔ Risk Assessment Link",
-              "content": "Does the “information for the support period” contain how the support period links to the risk assessment and update plan??",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Risk analysis shows update relevance through lifecycle.Reference: Annex VII (4)"
-            }
-          ]
-        },
-        {
-          "title": "Technical documentation, harmonised standards",
-          "description": "The technical documentation shall include a list of the harmonised standards, common specifications, or European cybersecurity certification schemes that you applied to meet the essential cybersecurity requirements. This section should describe:<ul><li>which harmonised standards were used (full or partial application);</li><li>which parts of a standard or specification were applied, if only certain sections were used;</li><li>which common specifications or European cybersecurity certification schemes were followed;</li><li>how these standards or solutions support compliance with Parts I and II of Annex I.</li></ul>If any standard or specification was only applied partially, the documentation must clearly identify which parts were used and how they contribute to meeting the essential cybersecurity requirements.",
-          "questions": [
-            {
-              "title": "Standards or Specifications Demonstrating Conformity",
-              "content": "Does the “list of applied standards and specifications” contain which standards or specifications demonstrate conformity?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: ISO/IEC 27001.Reference: Annex VII (5)"
-            },
-            {
-              "title": "Version Numbers & Publication Dates of Standards",
-              "content": "Does the “list of applied standards and specifications” contain the version numbers and publication dates of those standards?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: ISO/IEC 27001:2022.Reference: Annex VII (5)"
-            },
-            {
-              "title": "Certificates or Attestations Supporting Conformity",
-              "content": "Does the “list of applied standards and specifications” contain which certificates or attestations support conformity?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: CE certificate, cybersecurity scheme statement.Reference: Annex VII (5)"
-            },
-            {
-              "title": "Standards & Controls Cross-Reference",
-              "content": "Does the “list of applied standards and specifications” contain how the listed standards and controls link to Annex I requirements?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: Cross-reference table between requirements and controls.Reference: Annex VII (5)"
-            }
-          ]
-        },
-        {
-          "title": "Technical documentation, reports of the tests",
-          "description": "The technical documentation shall include the reports of the tests carried out to verify the conformity of the product with digital elements and the vulnerability handling processes with the essential cybersecurity requirements. These reports must show that the product and its associated processes meet the requirements set out in Parts I and II of Annex I. This section should describe:<ul><li>the tests performed on the product along with the methods, tools, and procedures used to verify conformity;</li><li>the tests performed on the vulnerability handling processes;</li><li>the evidence above should demonstrate that the essential cybersecurity requirements have been met from Annex I Parts I and II;</li></ul>",
-          "questions": [
-            {
-              "title": "Tests Performed for Conformity",
-              "content": "Does the “test reports for conformity” contain what tests were performed to verify compliance with Annex I?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: penetration testing, code review, vulnerability scan.Annex VII(6)"
-            },
-            {
-              "title": "Test Execution Details",
-              "content": "Does the “test reports for conformity” contain who performed the tests, when they were performed, and on which version?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: CyberLab EU, March 2025, firmware v2.1.Annex VII(6)"
-            },
-            {
-              "title": "Test Configurations, Results & Outcomes",
-              "content": "Does the “test reports for conformity” contain the test configurations, results, and outcomes?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: pass/fail summary, test case references, reproducibility details.Annex VII(6)"
-            },
-            {
-              "title": "Remediation Actions & Residual Risks",
-              "content": "Does the “test reports for conformity” contain what remediation actions were taken and what residual risks remain?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: patch v2.1.1 mitigated buffer overflow issue.Annex VII(6)"
-            },
-            {
-              "title": "Version Control & Traceability of Test Reports",
-              "content": "Does the “test reports for conformity” contain how the test reports are version-controlled and linked to product builds?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Example: report versioned per release; signed approval by Quality Assurance lead.Annex VII(6)"
-            }
-          ]
-        },
-        {
-          "title": "Technical documentation, EU Declaration of Conformity",
-          "description": "The technical documentation shall include a copy of the EU Declaration of Conformity for the product with digital elements. This document confirms that the product complies with the relevant provisions of the regulation and any other applicable Union legislation. This section should include:<ul><li>the complete and signed EU Declaration of Conformity;</li></ul>The declaration must be the final version provided to users or authorities and must match the product and version documented elsewhere in the technical file.",
-          "questions": [
-            {
-              "title": "Completed & Signed EU Declaration of Conformity",
-              "content": "Does the “EU declaration of conformity” contain a completed and signed EU Declaration of Conformity?",
-              "type": "mchoices",
-              "responses": [
-                {
-                  "title": "Yes",
-                  "type": "choice"
-                },
-                {
-                  "title": "No",
-                  "type": "choice"
-                },
-                {
-                  "title": "In Progress",
-                  "type": "choice"
-                }
-              ],
-              "info": "Point to the question set about the EU Declaration.Annex VII(7)"
+              "info": "Where applicable, the software bill of materials, further to a reasoned request from a market surveillance authority provided that it is necessary in order for that authority to be able to check compliance with the essential cybersecurity requirements set out in Annex I"
             }
           ]
         }
