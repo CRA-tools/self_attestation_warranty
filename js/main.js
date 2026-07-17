@@ -418,10 +418,12 @@ function generateReport(sections, form) {
       margin: 0.5rem 0;
     }
     .status-dot {
+      -webkit-print-color-adjust: exact;
       border-radius: 50%;
       display: inline-block;
       flex: 0 0 auto;
       height: 0.75rem;
+      print-color-adjust: exact;
       width: 0.75rem;
     }
   </style>

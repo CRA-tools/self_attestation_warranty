@@ -22,22 +22,114 @@
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
-              ]
+              ],
+              "info": "‘intended purpose’ means the use for which a product with digital elements is intended by the manufacturer, including the specific context and conditions of use, as specified in the information supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation<br/>‘reasonably foreseeable use’ means use that is not necessarily the intended purpose supplied by the manufacturer in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation, but which is likely to result from reasonably foreseeable human behaviour or technical operations or interactions"
             },
             {
-              "title": "PDE operational environment",
-              "content":"Does the cybersecurity risk assessment include information about PDE's operational environment?",
+              "title": "PDE functions",
+              "content":"Does the cybersecurity risk assessment include information about PDE's functions",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
                 {"title": "No", "type": "choice"},
                 {"title": "In Progress", "type": "choice"}
               ],
-              "info": "This refers to the external conditions under which the PDE is used within it intended purpose and reasonably foreseeable use"
+              "info": "PDE's functions are those specified by the manufacturer and provided when the PDE is used according to its intended purpose and reasonably foreseeable use"
             },
             {
-              "title": "Protected assets",
-              "content":"Does the cybersecurity risk assessment include information about PDE's protected assets?",
+              "title": "PDE conditions of use",
+              "content":"Does the cybersecurity risk assessment include information about PDE's conditions of use, including operational environment and time the PDE is expected to be in use?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "PDE user description",
+              "content":"Does the cybersecurity risk assessment include information about PDE's users?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ],
+              "info": "This includes information about the entity intended to install, operate, handle, use the PDE. The description outlines the user's reasonably foreseeable level of experience, knowledge and ability to securely install, operate, maintain, and decommission the product"
+            },
+            {
+              "title": "Risk acceptance criteria and risk management methodology",
+              "content":"Does the cybersecurity risk assessment include information about risk acceptance criteria and risk management methodology?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Protected assets and cybersecurity objectives",
+              "content":"Does the cybersecurity risk assessment include information about PDE's protected assets and the cybersecurity objectives?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Threat identification",
+              "content":"Does the cybersecurity risk assessment identifies threats to the PDE?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Risk estimation",
+              "content":"Does the cybersecurity risk assessment identifies provides a risk estimation by taking into consideration threat sources, attack vectors, existing controls, likelihood, and impact?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Risk evaluation",
+              "content":"Does the cybersecurity risk assessment identifies which risks should be mitigated and which are acceptable residual risks?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Risk treatment",
+              "content":"Does the cybersecurity risk assessment identifies security controls that should be applied in order to mitigate the identified risks?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Risk communication",
+              "content":"Does the cybersecurity risk assessment includes information about risks transferred to relevant stakeholders?",
+              "type": "mchoices",
+              "responses": [
+                {"title": "Yes", "type": "choice"},
+                {"title": "No", "type": "choice"},
+                {"title": "In Progress", "type": "choice"}
+              ]
+            },
+            {
+              "title": "Risk monitoring and review",
+              "content":"Does the cybersecurity risk assessment specify at what regularity the reviewing of the risk management shall be performed ?",
               "type": "mchoices",
               "responses": [
                 {"title": "Yes", "type": "choice"},
