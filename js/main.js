@@ -213,6 +213,13 @@ document.addEventListener('DOMContentLoaded', () => {
             qWrap.appendChild(p);
           }
 
+          if (q.reference) {
+            const reference = document.createElement('p');
+            reference.className = 'small text-muted text-break mb-2';
+            reference.textContent = `Reference: ${q.reference}`;
+            qWrap.appendChild(reference);
+          }
+
           if (q.info) {
             const info = document.createElement('div');
             info.className = 'small text-muted fst-italic mb-3';
