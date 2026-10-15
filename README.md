@@ -60,6 +60,7 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#related-tools">Related tools</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -119,6 +120,10 @@ Project Link: [https://github.com/CRA-tools/self_attestation_warranty](https://g
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Related -->
+## Related tools
+Related tools
+* [OpenChain CRA Compliance Requirements & Checklist](https://github.com/OpenChain-Project/CRA-Compliance/tree/main)
 
 
 <!-- ACKNOWLEDGMENTS -->
