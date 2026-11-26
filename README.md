@@ -123,7 +123,7 @@ Project Link: [https://github.com/CRA-tools/self_attestation_warranty](https://g
 <!-- Related -->
 ## Related tools
 Related tools
-* [OpenChain CRA Compliance Requirements & Checklist](https://github.com/OpenChain-Project/CRA-Compliance/tree/main)
+* [OpenChain CRA Compliance Requirements & Checklist v1.0](https://github.com/OpenChain-Project/CRA-Compliance/tree/main/1.0) — a community-maintained CRA readiness resource that readers may consult alongside this questionnaire
 
 
 <!-- ACKNOWLEDGMENTS -->
